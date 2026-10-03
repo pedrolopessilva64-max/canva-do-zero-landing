@@ -3,53 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Canva do Zero - Ebook Completo</title>
+  <title>Canva do Zero | Guia Completo</title>
+  <meta name="description" content="Ebook profissional Canva do Zero para quem deseja aprender a criar designs incríveis e vender melhor no digital." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #f5f7ff;
+      --bg: #f4f6ff;
       --paper: #ffffff;
-      --paper-soft: #f8f9ff;
-      --primary: #5b4ae9;
-      --secondary: #f35eb0;
-      --accent: #f8c84c;
+      --paper-soft: #f9faff;
+      --primary: #4a41d0;
+      --primary-2: #693ae8;
+      --secondary: #ea5ca8;
+      --accent: #f5bf4c;
       --navy: #111827;
       --text: #1f2937;
       --muted: #5f6b7c;
-      --line: #edf0f7;
+      --line: #edf1fb;
       --shadow: rgba(17, 24, 39, 0.08);
+      --success: #24b574;
     }
 
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
       margin: 0;
+      background: linear-gradient(180deg, #eef2ff 0%, #f8f9ff 100%);
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(180deg, #eef2ff 0%, #f9faff 100%);
       color: var(--text);
       line-height: 1.8;
     }
 
     .page {
-      max-width: 1000px;
-      margin: 32px auto;
+      max-width: 1040px;
+      margin: 28px auto;
       background: var(--paper);
-      box-shadow: 0 18px 60px rgba(17, 24, 39, 0.08);
+      box-shadow: 0 22px 70px rgba(17, 24, 39, 0.08);
+      border-radius: 0;
+      overflow: hidden;
     }
 
     .cover {
       position: relative;
-      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-      color: #fff;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-2) 40%, var(--secondary) 100%);
       min-height: 100vh;
-      padding: 96px 46px 72px;
-      text-align: center;
-      overflow: hidden;
+      color: #fff;
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 84px 42px 70px;
+      overflow: hidden;
+      text-align: center;
     }
 
     .cover::before,
@@ -62,30 +67,30 @@
     }
 
     .cover::before {
-      width: 470px;
-      height: 470px;
-      right: -100px;
-      top: -150px;
+      width: 480px;
+      height: 480px;
+      right: -120px;
+      top: -190px;
     }
 
     .cover::after {
-      width: 360px;
-      height: 360px;
+      width: 340px;
+      height: 340px;
       left: -90px;
-      bottom: -110px;
+      bottom: -120px;
     }
 
     .cover-content {
       position: relative;
       z-index: 1;
-      max-width: 780px;
+      max-width: 790px;
       margin: 0 auto;
     }
 
     .badge {
       display: inline-block;
       background: rgba(255,255,255,0.13);
-      border: 1px solid rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.2);
       border-radius: 999px;
       padding: 10px 18px;
       font-size: 0.72rem;
@@ -98,46 +103,46 @@
     h1, h2, h3, h4 {
       margin: 0 0 18px;
       font-family: 'Poppins', sans-serif;
-      line-height: 1.15;
       letter-spacing: -0.04em;
+      line-height: 1.15;
     }
 
     .cover h1 {
-      font-size: clamp(2.8rem, 5vw, 5.2rem);
-      margin-bottom: 16px;
+      font-size: clamp(3rem, 6vw, 5.4rem);
+      margin-bottom: 14px;
     }
 
     .subtitle {
-      font-size: clamp(1.08rem, 2vw, 1.4rem);
-      color: rgba(255,255,255,0.92);
-      max-width: 700px;
-      margin: 0 auto 28px;
-      line-height: 1.7;
+      font-size: clamp(1.08rem, 2vw, 1.42rem);
+      color: rgba(255,255,255,0.94);
+      max-width: 720px;
+      margin: 0 auto 30px;
+      line-height: 1.75;
     }
 
     .cover-stats {
       display: grid;
       grid-template-columns: repeat(3, minmax(160px, 1fr));
       gap: 18px;
-      max-width: 760px;
-      margin: 34px auto 0;
+      margin-top: 34px;
     }
 
     .stat-box {
       background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.16);
       border-radius: 16px;
-      padding: 22px 12px;
+      padding: 18px 12px;
+      backdrop-filter: blur(8px);
     }
 
     .stat-box strong {
       display: block;
-      font-size: clamp(1.7rem, 3vw, 2.3rem);
+      font-size: clamp(1.8rem, 3vw, 2.3rem);
       margin-bottom: 6px;
     }
 
     .section {
-      padding: 72px 42px;
+      padding: 74px 42px;
       border-bottom: 1px solid var(--line);
     }
 
@@ -147,27 +152,27 @@
 
     .section-header {
       text-align: center;
-      margin-bottom: 28px;
+      margin-bottom: 24px;
     }
 
     .eyebrow {
       display: inline-block;
-      margin-bottom: 12px;
-      font-size: 0.74rem;
+      color: var(--primary);
       letter-spacing: 0.12em;
       text-transform: uppercase;
+      font-size: 0.74rem;
       font-weight: 800;
-      color: var(--primary);
+      margin-bottom: 12px;
     }
 
     h2 {
-      font-size: clamp(2rem, 3vw, 2.8rem);
+      font-size: clamp(2.2rem, 4vw, 3.1rem);
       color: var(--navy);
       margin-bottom: 18px;
     }
 
     p {
-      font-size: 1.04rem;
+      font-size: 1.05rem;
       line-height: 1.9;
       color: var(--muted);
       margin: 0 0 16px;
@@ -175,34 +180,33 @@
 
     .toc {
       background: var(--paper-soft);
-      border: 1px solid #ecefff;
-      border-radius: 16px;
+      border: 1px solid #ebf0ff;
+      border-radius: 18px;
       padding: 26px 28px;
-      margin-top: 18px;
     }
 
     .toc-item {
       display: flex;
       gap: 12px;
-      font-size: 1rem;
       color: var(--text);
-      margin-bottom: 8px;
+      margin-bottom: 6px;
+      font-size: 1rem;
     }
 
     .toc-item strong { color: var(--primary); }
 
     .highlight {
-      background: linear-gradient(120deg, rgba(91, 74, 233, 0.10), rgba(243, 94, 176, 0.12));
+      background: linear-gradient(120deg, rgba(74,65,208,0.10), rgba(234,92,168,0.12));
       border-left: 5px solid var(--primary);
+      padding: 28px 22px;
       border-radius: 14px;
-      padding: 26px 22px;
       margin: 28px 0;
     }
 
     .highlight strong {
-      display: block;
       color: var(--primary);
       font-weight: 800;
+      display: block;
       margin-bottom: 10px;
     }
 
@@ -210,62 +214,62 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 22px;
-      margin-top: 30px;
+      margin-top: 32px;
     }
 
     .card {
       background: #fafbff;
-      border: 1px solid #ecf0ff;
+      border: 1px solid #edf1ff;
       border-top: 4px solid var(--primary);
       border-radius: 16px;
-      padding: 26px 22px;
-      box-shadow: 0 12px 26px rgba(17,24,39,0.03);
+      padding: 28px 22px;
+      box-shadow: 0 12px 28px rgba(17, 24, 39, 0.03);
     }
 
     .card.pink { border-top-color: var(--secondary); }
     .card.gold { border-top-color: var(--accent); }
-    .card-icon { font-size: 2.5rem; margin-bottom: 10px; }
+    .card-icon { font-size: 2.6rem; margin-bottom: 12px; }
     .card h4 {
-      margin-bottom: 8px;
-      font-size: 1.22rem;
+      font-size: 1.2rem;
       color: var(--navy);
+      margin-bottom: 8px;
     }
-    .card p { font-size: 0.96rem; margin-bottom: 0; }
+    .card p { margin-bottom: 0; font-size: 0.96rem; }
 
-    .modules {
+    .module-list {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 22px;
-      margin-top: 26px;
+      gap: 20px;
+      margin-top: 28px;
     }
 
     .module {
-      padding: 22px 20px;
       background: #f7f8ff;
       border: 1px solid #edf0ff;
       border-left: 5px solid var(--primary);
       border-radius: 14px;
+      padding: 22px 18px;
     }
 
     .module-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 12px;
       margin-bottom: 10px;
+      gap: 12px;
     }
 
     .module-number {
       width: 48px;
       height: 48px;
-      border-radius: 50%;
       background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: #fff;
+      color: white;
+      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-weight: 800;
       font-family: 'Poppins', sans-serif;
+      font-weight: 800;
     }
 
     .module-time {
@@ -273,22 +277,25 @@
       color: var(--primary);
       border-radius: 999px;
       padding: 6px 10px;
-      font-size: 0.75rem;
+      font-size: 0.76rem;
       font-weight: 700;
     }
 
     .module h4 {
-      font-size: 1.08rem;
-      color: var(--navy);
+      font-size: 1.1rem;
       margin-bottom: 8px;
+      color: var(--navy);
     }
 
-    .module p { margin-bottom: 0; font-size: 0.96rem; }
+    .module p {
+      margin-bottom: 0;
+      font-size: 0.96rem;
+    }
 
     .benefits-list {
       display: grid;
       gap: 18px;
-      margin-top: 26px;
+      margin-top: 28px;
     }
 
     .benefit-item {
@@ -303,49 +310,50 @@
       flex-shrink: 0;
       border-radius: 12px;
       background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
 
     .benefit-content h4 {
-      margin-bottom: 6px;
       font-size: 1.18rem;
       color: var(--navy);
+      margin-bottom: 6px;
     }
 
     .stats {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 22px;
+      gap: 20px;
       margin-top: 28px;
     }
 
     .stat-box {
-      background: #f8f9ff;
+      background: #f9f9ff;
       border-radius: 16px;
-      border-bottom: 4px solid var(--primary);
       padding: 28px 12px;
       text-align: center;
+      border-bottom: 5px solid var(--primary);
     }
-
     .stat-box.pink { border-bottom-color: var(--secondary); }
     .stat-box.gold { border-bottom-color: var(--accent); }
+
     .stat-number {
       font-family: 'Poppins', sans-serif;
-      font-size: clamp(2.3rem, 4vw, 3rem);
+      font-size: clamp(2.4rem, 4vw, 3rem);
       font-weight: 900;
       color: var(--primary);
       margin-bottom: 8px;
     }
     .stat-box.pink .stat-number { color: var(--secondary); }
     .stat-box.gold .stat-number { color: var(--accent); }
+
     .stat-label {
       font-size: 0.92rem;
-      color: var(--muted);
       font-weight: 700;
+      color: var(--muted);
     }
 
     .testimonials {
@@ -360,10 +368,10 @@
       border-top: 4px solid var(--accent);
       border-radius: 14px;
       padding: 24px 20px;
-      box-shadow: 0 10px 22px rgba(17,24,39,0.04);
+      box-shadow: 0 12px 24px rgba(17, 24, 39, 0.03);
     }
 
-    .stars { color: var(--accent); font-size: 1.15rem; margin-bottom: 10px; }
+    .stars { color: var(--accent); font-size: 1.12rem; margin-bottom: 12px; }
     .testimonial-text {
       font-style: italic;
       font-size: 0.96rem;
@@ -374,20 +382,20 @@
       display: flex;
       align-items: center;
       gap: 12px;
-      border-top: 1px solid #ebedf5;
+      border-top: 1px solid #ebf0ff;
       padding-top: 12px;
     }
 
     .author-avatar {
       width: 42px;
       height: 42px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: #fff;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-weight: 800;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      font-weight: 900;
+      color: white;
     }
 
     .author-info strong { display: block; color: var(--navy); }
@@ -397,7 +405,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 20px;
-      margin-top: 28px;
+      margin-top: 26px;
     }
 
     .faq-item {
@@ -408,27 +416,29 @@
     }
 
     .faq-item h4 {
-      font-family: 'Poppins', sans-serif;
       font-size: 1.05rem;
-      margin-bottom: 8px;
       color: var(--navy);
+      margin-bottom: 8px;
     }
 
-    .faq-item p { margin-bottom: 0; font-size: 0.94rem; }
+    .faq-item p {
+      font-size: 0.94rem;
+      margin-bottom: 0;
+    }
 
     .summary {
       background: linear-gradient(135deg, #0f172a 0%, #1f2937 100%);
       color: white;
-      padding: 78px 44px;
+      padding: 78px 42px;
     }
 
     .summary-content {
-      max-width: 760px;
+      max-width: 780px;
       margin: 0 auto;
       text-align: center;
     }
 
-    .summary .eyebrow { color: #f8c84c; }
+    .summary .eyebrow { color: var(--accent); }
     .summary h2 { color: white; }
 
     .summary-box {
@@ -441,12 +451,12 @@
 
     .summary-box p {
       color: rgba(255,255,255,0.88);
-      margin: 0 0 12px;
+      margin-bottom: 12px;
     }
 
     .summary-list {
       max-width: 560px;
-      margin: 22px auto 0;
+      margin: 24px auto 0;
       text-align: left;
     }
 
@@ -466,25 +476,18 @@
     }
 
     .footer {
-      background: #f5f5ff;
-      padding: 32px 20px 42px;
+      padding: 30px 18px 36px;
+      background: #f5f6ff;
       text-align: center;
-      font-size: 0.9rem;
       color: #6b7280;
+      font-size: 0.9rem;
     }
 
     @media (max-width: 760px) {
-      .cover-stats {
-        grid-template-columns: 1fr;
-      }
-
-      .section {
-        padding: 52px 22px;
-      }
-
-      .summary {
-        padding: 58px 22px;
-      }
+      .cover { padding: 88px 20px 72px; }
+      .cover-stats { grid-template-columns: 1fr; }
+      .section { padding: 54px 20px; }
+      .summary { padding: 58px 20px; }
     }
   </style>
 </head>
@@ -492,9 +495,9 @@
   <div class="page">
     <section class="cover">
       <div class="cover-content">
-        <div class="badge">📚 Guia completo</div>
+        <div class="badge">📚 guia completo</div>
         <h1>Canva do Zero</h1>
-        <p class="subtitle">O guia profissional para criar designs que impressionam, mesmo sem experiência anterior.</p>
+        <p class="subtitle">O guia profissional para criar designs que impressionam, comunicar melhor e vender com muito mais autoridade.</p>
 
         <div class="cover-stats">
           <div class="stat-box">
@@ -518,12 +521,12 @@
         <h2>📑 Índice</h2>
       </div>
       <div class="toc">
-        <div class="toc-item"><strong>1.</strong> Bem-vindo ao Canva do Zero</div>
+        <div class="toc-item"><strong>1.</strong> Introdução ao ebook</div>
         <div class="toc-item"><strong>2.</strong> Por que aprender Canva hoje</div>
-        <div class="toc-item"><strong>3.</strong> Parte 1: fundamentos e base visual</div>
+        <div class="toc-item"><strong>3.</strong> Parte 1: fundamentos do design</div>
         <div class="toc-item"><strong>4.</strong> Parte 2: produção profissional</div>
-        <div class="toc-item"><strong>5.</strong> O que você vai criar</div>
-        <div class="toc-item"><strong>6.</strong> Resultados reais e depoimentos</div>
+        <div class="toc-item"><strong>5.</strong> O que você consegue criar</div>
+        <div class="toc-item"><strong>6.</strong> Resultados e depoimentos</div>
         <div class="toc-item"><strong>7.</strong> Dúvidas frequentes</div>
         <div class="toc-item"><strong>8.</strong> Conclusão</div>
       </div>
@@ -534,13 +537,13 @@
         <span class="eyebrow">Introdução</span>
         <h2>Bem-vindo ao Canva do Zero</h2>
       </div>
-      <p>Você quer criar designs profissionais, mas não sabe por onde começar. Talvez ache que precisa de experiência em design para produzir peças bonitas. Talvez pense que a ferramenta é difícil. Ou talvez tenha medo de que o visual não fique bom.</p>
-      <p>Este ebook foi criado para mostrar que isso não precisa ser complicado. O Canva é uma ferramenta acessível, intuitiva e extremamente útil para pessoas que querem produzir conteúdo visual com qualidade, mesmo sem ser designer.</p>
+      <p>Se você está começando do zero, provavelmente sente que há uma distância muito grande entre o que vê em marcas fortes e o que você consegue produzir hoje. Isso é normal. O que parece complexo no começo, na verdade, é apenas um conjunto de princípios que podem ser aprendidos de forma clara e prática.</p>
+      <p>Este ebook foi criado para te mostrar que não é preciso ser designer profissional para criar peças com aparência sofisticada, organizada e que geram credibilidade. O Canva é uma ferramenta acessível, poderosa e extremamente útil para quem quer produzir conteúdo visual com qualidade.</p>
       <div class="highlight">
-        <strong>Objetivo do ebook:</strong>
-        <p>Ensinar você a usar o Canva como uma ferramenta real de comunicação visual. O objetivo é ir além de templates prontos e te levar a entender a lógica do design, o uso de elementos, cores, hierarquia visual e como aplicar isso em materiais profissionais.</p>
+        <strong>Objetivo deste ebook:</strong>
+        <p>Ensinar você a pensar visualmente, entender as bases do design e usar o Canva como uma ferramenta estratégica para criar peças profissionais, comunicar melhor sua marca e elevar sua presença digital.</p>
       </div>
-      <p>O foco aqui não é apenas aprender a clicar. É entender o que faz um design parecer bem feito, claro e forte. Porque quando você entende isso, a qualidade do seu conteúdo melhora — e isso muda tudo na percepção da sua marca, produto ou serviço.</p>
+      <p>Mais do que aprender a clicar, o objetivo é desenvolver sua visão, melhorar sua comunicação visual e fazer com que cada elemento da sua peça tenha sentido, organização e propósito.</p>
     </section>
 
     <section class="section">
@@ -554,15 +557,15 @@
           <div class="benefit-icon">💼</div>
           <div class="benefit-content">
             <h4>Fortaleça sua marca pessoal</h4>
-            <p>Um bom visual transmite autoridade. Quando a sua marca parece mais profissional, as pessoas passam a confiar mais em você, em seus serviços e em sua mensagem.</p>
+            <p>Uma marca que se comunica bem visualmente transmite mais confiança. Em um mercado saturado, visual bem executado deixa você mais profissional e mais reconhecível.</p>
           </div>
         </div>
 
         <div class="benefit-item">
           <div class="benefit-icon">📱</div>
           <div class="benefit-content">
-            <h4>Crie conteúdo para redes sociais</h4>
-            <p>Posts, stories, capas, banners e peças para divulgação precisam ser visualmente fortes. O Canva ajuda você a criar tudo isso sem depender de um designer profissional para cada detalhe.</p>
+            <h4>Produza conteúdo para redes sociais</h4>
+            <p>Posts, stories, capas, banners e materiais para divulgação precisam ter apelo visual para chamar atenção. O Canva permite você criar isso de forma rápida e profissional.</p>
           </div>
         </div>
 
@@ -570,15 +573,15 @@
           <div class="benefit-icon">⚡</div>
           <div class="benefit-content">
             <h4>Economize tempo e dinheiro</h4>
-            <p>Você não precisa contratar alguém para cada peça. Com a ferramenta certa e com alguns princípios bem aplicados, você consegue produzir materiais muito bons de forma rápida e prática.</p>
+            <p>Você não precisa depender de um designer para toda criação. Com a ferramenta certa e com os princípios certos, você consegue produzir materiais bonitos e fortes sem gastar tanto.</p>
           </div>
         </div>
 
         <div class="benefit-item">
           <div class="benefit-icon">🚀</div>
           <div class="benefit-content">
-            <h4>Abra novas oportunidades</h4>
-            <p>Se você quer vender mais, atrair clientes, crescer no Instagram, construir presença digital ou trabalhar com design para pessoas, esse conhecimento vira uma vantagem competitiva real.</p>
+            <h4>Crie novas oportunidades</h4>
+            <p>Se você quer vender mais, ampliar sua presença digital, captar clientes ou evoluir como criador de conteúdo, essa habilidade vira uma grande vantagem competitiva.</p>
           </div>
         </div>
       </div>
@@ -587,47 +590,47 @@
     <section class="section">
       <div class="section-header">
         <span class="eyebrow">Parte 1</span>
-        <h2>Fundamentos e base visual</h2>
+        <h2>Fundamentos do design</h2>
       </div>
 
-      <p>A primeira parte do ebook é a base. É onde você aprende o que realmente deixa um design bonito, organizado e profissional. Não é só sobre entalhar elementos na tela. É sobre entender composição, equilíbrio, legibilidade, uso de espaço e leitura visual.</p>
-      <p>Quando você entende esses princípios, sua criatividade ganha muito mais força. Você para de depender só de templates e passa a criar peças com identidade própria, com bom senso e com objetivo claro.</p>
+      <p>A primeira etapa é essencial porque ela forma a base. É aí que você aprende o que realmente faz um design funcionar: organização, composição, equilíbrio visual, tipografia, paleta e leitura. Sem essa base, você pode até copiar um template, mas não vai criar algo realmente sólido e com identidade.</p>
+      <p>Quando você entende os fundamentos, consegue criar peças que parecem pensadas, melhores estruturadas e mais profissionais. E essa é a verdadeira diferença entre um material aleatório e um material que gera confiança.</p>
 
       <div class="highlight">
         <strong>Objetivo desta etapa:</strong>
-        <p>Te preparar para pensar em design de forma estratégica. Você vai entender a lógica da interface do Canva, como organizar elementos na tela e como harmonizar cores, textos e imagens para criar algo que tenha impacto visual.</p>
+        <p>Te preparar para usar o Canva como uma ferramenta inteligente de comunicação visual. Você vai aprender a entender a interface, os elementos gráficos e como organizar tudo em um layout com clareza e impact.</p>
       </div>
 
-      <h3 style="color: var(--navy);">O que você vai aprender aqui</h3>
+      <h3 style="color: var(--navy);">O que você vai aprender nesta etapa</h3>
       <div class="grid">
         <div class="card">
           <div class="card-icon">🎨</div>
           <h4>Interface do Canva</h4>
-          <p>Você vai conhecer as principais áreas da plataforma, entender como os projetos funcionam e aprender a navegar com mais confiança dentro do editor.</p>
+          <p>Você entenderá como funciona a estrutura da ferramenta, suas áreas principais e como navegar com mais segurança para criar projetos com qualidade.</p>
         </div>
 
         <div class="card pink">
           <div class="card-icon">📐</div>
           <h4>Estrutura visual</h4>
-          <p>Você entenderá como distribuir os elementos na tela, criar organização visual, alinhar itens e evitar layouts que parecem confusos ou desorganizados.</p>
+          <p>Você aprenderá a organizar os elementos na página, trabalhar com alinhamento, espaçamento e hierarquia para que a peça fique clara e impressionante.</p>
         </div>
 
         <div class="card gold">
           <div class="card-icon">✨</div>
           <h4>Estilo e consistência</h4>
-          <p>Você aprenderá a escolher fontes, cores e espaçamento com mais inteligência, criando uma visualidade mais elegante e profissional.</p>
+          <p>Você vai descobrir como combinar tipografia, cores e contraste de maneira mais inteligente, criando uma identidade visual mais sólida e sofisticada.</p>
         </div>
       </div>
 
       <h3 style="color: var(--navy);">Estrutura da Parte 1</h3>
-      <div class="modules">
+      <div class="module-list">
         <div class="module">
           <div class="module-header">
             <div class="module-number">01</div>
             <div class="module-time">45 min</div>
           </div>
           <h4>Conhecendo o Canva</h4>
-          <p>Você aprende a interface da ferramenta, seus principais menus e como começar a criar seus primeiros projetos com segurança.</p>
+          <p>Você aprende a interface principal, os módulos de trabalho e como iniciar projetos de forma prática e organizada.</p>
         </div>
 
         <div class="module">
@@ -636,7 +639,7 @@
             <div class="module-time">1h 10m</div>
           </div>
           <h4>Elementos visuais</h4>
-          <p>Você compreende como usar texto, imagens, formas, linhas e ícones para compor layouts que tenham equilíbrio e clareza.</p>
+          <p>Você entende o papel de texto, imagens, formas, linhas e ícones e como usá-los sem poluir a peça.</p>
         </div>
 
         <div class="module">
@@ -645,7 +648,7 @@
             <div class="module-time">1h 20m</div>
           </div>
           <h4>Cores e tipografia</h4>
-          <p>Você descobre como combinar tonalidades, escolher fontes e aplicar contraste para criar materiais com melhor leitura e presença visual.</p>
+          <p>Você aprende como combinar paletas, fontes e contraste para dar mais legibilidade, personalidade e presença visual à sua criação.</p>
         </div>
 
         <div class="module">
@@ -654,7 +657,7 @@
             <div class="module-time">2h</div>
           </div>
           <h4>Primeiros projetos</h4>
-          <p>Você começa a aplicar tudo em atividade prática, criando primeiros materiais com aparência mais profissional.</p>
+          <p>Você coloca tudo em prática e cria os primeiros materiais com uma qualidade muito superior ao que se faz por tentativa e erro.</p>
         </div>
       </div>
     </section>
@@ -665,12 +668,12 @@
         <h2>Produção profissional</h2>
       </div>
 
-      <p>Depois de entender os fundamentos, a segunda parte leva você para a ação. Agora o objetivo é sair do conhecimento básico e começar a construir peças que têm intenção e resultado. Isso significa pensar em quem vai ver a peça, qual mensagem deseja transmitir e como o design pode ajudar essa mensagem a funcionar melhor.</p>
-      <p>É essa mudança de perspectiva que separa alguém que apenas usa o Canva de alguém que realmente entende comunicação visual. Em vez de simplesmente montar uma imagem bonita, você passa a montar uma peça com estratégia, clareza e força.</p>
+      <p>Depois de construir a base, a segunda parte leva você para a execução real. Agora você não está apenas entendendo a ferramenta; você está começando a usar o Canva como instrumento de estratégia, comunicação e posicionamento. Aqui, o diferencial está em transformar uma ideia em uma peça que comunica algo com clareza e impacto visual.</p>
+      <p>Essa é a parte em que o design deixa de ser algo decorativo e passa a ser funcional. A peça deixa de ser apenas bonita e passa a ser útil: ela chama atenção, organiza a informação e reforça a percepção de valor da sua marca ou oferta.</p>
 
       <div class="highlight">
-        <strong>O que muda nesta etapa?</strong>
-        <p>Você deixa de criar apenas por estética e passa a criar com propósito. Isso é o que transforma uma peça comum em uma peça que atraí atenção, comunica melhor e organiza a percepção da sua marca.</p>
+        <strong>O que muda nesta etapa:</strong>
+        <p>Você deixa de usar o Canva como uma ferramenta superficial e passa a usar como uma máquina de comunicação visual. Essa mudança é o que transforma seu trabalho de “simples criação” para “material estratégico”.</p>
       </div>
 
       <h3 style="color: var(--navy);">O que você vai dominar</h3>
@@ -678,31 +681,31 @@
         <div class="card">
           <div class="card-icon">📱</div>
           <h4>Posts e stories</h4>
-          <p>Crie conteúdos para redes sociais com estrutura visual mais clara, forte e pensada para prender a atenção.</p>
+          <p>Crie peças para redes sociais com melhor leitura, organização visual e maior capacidade de prender a atenção do público.</p>
         </div>
 
         <div class="card pink">
           <div class="card-icon">📢</div>
           <h4>Anúncios e campanhas</h4>
-          <p>Entenda como criar peças com foco em clareza, leitura e destaque visual para divulgação e promoção.</p>
+          <p>Aprenda a produzir peças para divulgação, com foco em mensagens claras, oferta bem destacada e visual forte.</p>
         </div>
 
         <div class="card gold">
           <div class="card-icon">📊</div>
           <h4>Apresentações</h4>
-          <p>Crie slides com melhor visual, organização e comunicação, de forma que as pessoas prestem atenção na mensagem.</p>
+          <p>Crie slides mais profissionais, organizados e visualmente claros para vender ideias, apresentar projetos e fechar negócios.</p>
         </div>
       </div>
 
       <h3 style="color: var(--navy);">Estrutura da Parte 2</h3>
-      <div class="modules">
+      <div class="module-list">
         <div class="module">
           <div class="module-header">
             <div class="module-number">05</div>
             <div class="module-time">1h 40m</div>
           </div>
           <h4>Criação de posts e stories</h4>
-          <p>Você aprende a pensar na mensagem, no foco visual e na organização para produzir conteúdo mais atrativo.</p>
+          <p>Você aprende a pensar em foco visual, hierarquia de leitura e elementos que realmente chamam atenção no feed e no stories.</p>
         </div>
 
         <div class="module">
@@ -711,7 +714,7 @@
             <div class="module-time">1h 20m</div>
           </div>
           <h4>Design para anúncios</h4>
-          <p>Você entende como criar peças que chamam atenção rápido e ajudam a transmitir a oferta com clareza.</p>
+          <p>Você compreende como criar peças que capturam a atenção rapidamente e reforçam a proposta de valor com clareza.</p>
         </div>
 
         <div class="module">
@@ -720,7 +723,7 @@
             <div class="module-time">1h 30m</div>
           </div>
           <h4>Branding completo</h4>
-          <p>Você aprende a construir identidade visual mais consistente, fortalecendo sua presença e reconhecimento.</p>
+          <p>Você aprende a desenvolver uma identidade visual mais sólida, com consistência, equilíbrio e percepção de valor.</p>
         </div>
 
         <div class="module">
@@ -729,7 +732,7 @@
             <div class="module-time">2h</div>
           </div>
           <h4>Projetos práticos finais</h4>
-          <p>Você integra tudo em exercícios reais, criando materiais e desenvolvendo a visão que fará seu trabalho se destacar.</p>
+          <p>Você aplica tudo em exercícios reais e reforça aquilo que faz a diferença entre uma peça comum e uma peça profissional.</p>
         </div>
       </div>
     </section>
@@ -744,19 +747,19 @@
         <div class="card">
           <div class="card-icon">📱</div>
           <h4>Posts e stories</h4>
-          <p>Crie peças para redes sociais com visual atraente, bom uso de texto, leitura fácil e forte sensação de profissionalismo.</p>
+          <p>Crie materiais para redes sociais com leitura clara, visual forte e boa capacidade de chamar atenção para aquilo que você quer vender.</p>
         </div>
 
         <div class="card pink">
           <div class="card-icon">🧾</div>
           <h4>Materiais digitais</h4>
-          <p>Capas, infográficos, banners e peças digitais para fortalecer sua comunicação visual, presença e autoridade.</p>
+          <p>Capas, banners, infográficos e peças digitais para reforçar a presença da sua marca e comunicar melhor suas ideias.</p>
         </div>
 
         <div class="card gold">
           <div class="card-icon">🧠</div>
           <h4>Branding</h4>
-          <p>Crie elementos visuais que representam sua marca com identidade consistente e melhor percepção de valor.</p>
+          <p>Crie elementos mais consistentes para sua marca, aumentando sua autoridade e o valor percebido do que você oferece.</p>
         </div>
       </div>
     </section>
@@ -764,7 +767,7 @@
     <section class="section">
       <div class="section-header">
         <span class="eyebrow">Resultados</span>
-        <h2>Histórias de sucesso</h2>
+        <h2>Histórias que inspiram</h2>
       </div>
 
       <div class="stats">
@@ -785,7 +788,7 @@
       <div class="testimonials">
         <div class="testimonial">
           <div class="stars">★★★★★</div>
-          <p class="testimonial-text">“Comecei do zero e, em poucas semanas, já estava criando artes para meu negócio com muito mais confiança. Hoje, consigo produzir peças mais profissionais e vender melhor meus serviços.”</p>
+          <p class="testimonial-text">“Quando comecei, eu nem sabia mexer direito no Canva. Hoje já produzo artes para meu negócio e consigo vender melhor por conta do visual mais profissional.”</p>
           <div class="testimonial-author">
             <div class="author-avatar">A</div>
             <div class="author-info">
@@ -797,7 +800,7 @@
 
         <div class="testimonial">
           <div class="stars">★★★★★</div>
-          <p class="testimonial-text">“O curso é super didático. Não sabia nada de design e hoje consigo criar conteúdos muito mais fortes para minhas redes sociais e para projetos dos meus clientes.”</p>
+          <p class="testimonial-text">“Meu conteúdo melhorou muito. Antes eu fazia tudo sem planejamento. Agora tenho peças mais organizadas, bonitas e mais alinhadas com a minha marca.”</p>
           <div class="testimonial-author">
             <div class="author-avatar">J</div>
             <div class="author-info">
@@ -809,7 +812,7 @@
 
         <div class="testimonial">
           <div class="stars">★★★★★</div>
-          <p class="testimonial-text">“Foi a melhor compra que fiz. Aprendi a criar peças visuais com profissionalismo e isso me ajudou a valorizar meu trabalho e reforçar minha presença digital.”</p>
+          <p class="testimonial-text">“Esse conhecimento mudou como eu me posiciono online. Passo a criar peças com muito mais clareza e, claro, meu trabalho parece mais valioso.”</p>
           <div class="testimonial-author">
             <div class="author-avatar">L</div>
             <div class="author-info">
@@ -830,27 +833,27 @@
       <div class="faq">
         <div class="faq-item">
           <h4>Preciso saber design antes?</h4>
-          <p>Não. O ebook foi pensado para iniciantes e parte do zero, com linguagem simples e muito prática.</p>
+          <p>Não. Este ebook foi pensado para iniciantes e começa do zero, de forma simples, objetiva e bem estruturada.</p>
         </div>
         <div class="faq-item">
           <h4>É um material online?</h4>
-          <p>Sim. Você acessa o conteúdo pelo computador ou celular, no seu ritmo, em qualquer momento.</p>
+          <p>Sim. Você acessa de qualquer lugar, no celular ou computador, no ritmo que melhor funcionar para você.</p>
         </div>
         <div class="faq-item">
           <h4>Posso usar para negócios?</h4>
-          <p>Sim. O Canva é extremamente útil para criar peças para empresas, perfis pessoais, clientes e campanhas.</p>
+          <p>Sim. O Canva é uma ferramenta extremamente útil para negócios, perfis pessoais, projetos pessoais e materiais de divulgação.</p>
         </div>
         <div class="faq-item">
           <h4>Quanto tempo leva para aprender?</h4>
-          <p>Você pode começar a criar peças melhores em poucas horas e evoluir gradualmente ao longo dos módulos.</p>
+          <p>Você pode começar a criar peças melhores em poucas horas, e evoluir de forma muito natural ao longo dos módulos.</p>
         </div>
         <div class="faq-item">
           <h4>Preciso pagar para usar o Canva?</h4>
-          <p>Não necessariamente. A versão gratuita já oferece muito para começar. A versão Pro amplia as possibilidades.</p>
+          <p>Nem sempre. A versão gratuita já cobre bastante uso inicial e a versão Pro amplia muito as possibilidades.</p>
         </div>
         <div class="faq-item">
           <h4>Vale a pena estudar isso?</h4>
-          <p>Vale muito a pena para quem quer se comunicar melhor visualmente, construir uma marca mais forte e aumentar a percepção de valor do que faz.</p>
+          <p>Vale muito a pena para quem quer melhorar a comunicação visual, ganhar mais confiança e aumentar a percepção de valor do que oferece.</p>
         </div>
       </div>
     </section>
@@ -861,21 +864,21 @@
         <h2>Você não precisa nascer designer para criar algo profissional.</h2>
 
         <div class="summary-box">
-          <p>O Canva é uma ferramenta acessível, prática e extremamente útil quando você começa a entender a lógica do design. Ele não exige que você seja expert em estética para criar algo forte e bem feito.</p>
-          <p>O que faz a diferença é ter clareza sobre composição, hierarquia visual, tipografia, contraste e objetivo da comunicação. Quando você entende isso, suas peças passam a ter muito mais impacto.</p>
+          <p>O Canva é uma ferramenta poderosa quando usada com estratégia. Ele não exige que você seja especialista em arte para entregar peças bonitas e funcionais. O que realmente faz diferença é entender visualmente os princípios básicos que organizam uma boa composição.</p>
+          <p>Com esse conhecimento, você sai do improviso e passa a criar com intenção. Isso muda completamente a qualidade do seu conteúdo, a percepção da sua marca e a sua confiança ao publicar.</p>
         </div>
 
         <div class="summary-list">
-          <p>Você atrai mais atenção com peças mais organizadas e bem pensadas.</p>
-          <p>Você melhora a percepção da sua marca e da sua comunicação.</p>
-          <p>Você cria conteúdo mais profissional sem depender de especialistas para tudo.</p>
-          <p>Você ganha confiança para produzir peças que realmente fazem sentido.</p>
+          <p>Você entende melhor o que faz uma peça parecer profissional.</p>
+          <p>Você cria materiais mais alinhados com sua marca e público.</p>
+          <p>Você comunica sua mensagem com mais clareza e impacto.</p>
+          <p>Você ganha mais confiança para vender, promover e crescer digitalmente.</p>
         </div>
       </div>
     </section>
 
     <footer class="footer">
-      Canva do Zero • O guia completo para criar designs incríveis do zero
+      Canva do Zero • O guia profissional para criar designs incríveis do zero
     </footer>
   </div>
 </body>
