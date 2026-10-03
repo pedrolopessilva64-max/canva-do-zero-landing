@@ -44,6 +44,36 @@
       overflow: hidden;
     }
 
+    .print-toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background: rgba(17, 24, 39, 0.96);
+      padding: 12px 18px;
+      text-align: right;
+      box-shadow: 0 6px 18px rgba(17, 24, 39, 0.12);
+    }
+
+    .print-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border: none;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 10px 18px;
+      font-weight: 800;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      box-shadow: 0 12px 24px rgba(74, 65, 208, 0.25);
+    }
+
+    .print-btn:hover {
+      transform: translateY(-1px);
+    }
+
     .cover {
       position: relative;
       background: linear-gradient(135deg, var(--primary) 0%, var(--primary-2) 40%, var(--secondary) 100%);
@@ -489,9 +519,58 @@
       .section { padding: 54px 20px; }
       .summary { padding: 58px 20px; }
     }
+
+    @page {
+      size: A4;
+      margin: 12mm 10mm;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .print-toolbar {
+        display: none !important;
+      }
+
+      .page {
+        max-width: none;
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+      }
+
+      .cover,
+      .section,
+      .summary,
+      .footer {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+
+      .cover {
+        min-height: auto;
+        padding: 50px 20px 40px;
+      }
+
+      .section,
+      .summary {
+        padding-top: 36px;
+        padding-bottom: 36px;
+      }
+
+      .summary {
+        background: #111827;
+      }
+    }
   </style>
 </head>
 <body>
+  <div class="print-toolbar no-print">
+    <button class="print-btn" type="button" onclick="window.print()">🖨️ Salvar em PDF</button>
+  </div>
+
   <div class="page">
     <section class="cover">
       <div class="cover-content">
